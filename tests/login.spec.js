@@ -28,7 +28,7 @@ test('Realiza login com sucesso @login', async ({page}) => {
 
     await page.getByRole('button', { name: 'login' }).click();
 
-    await page.getByRole('heading', { name: 'Login realizado' }).click();
+    
     await page.screenshot({ path: 'screenshots/screenshot_login_ok.png' });
     await page.getByRole('heading', { name: 'Login realizado' }).screenshot({ path: 'screenshots/screenshot_logado.png' });
 
